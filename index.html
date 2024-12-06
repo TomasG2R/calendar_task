@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <!--kalendorius-->
+    <div id="calendar">
+        <div id="header">
+            <button id="prev">Previous</button>
+            <h1 id="month-title"></h1>
+            <button id="next">Next</button>
+        </div>
+        <div id="days"></div>
+
+    </div>
+
+    <!-- pop-upas-->
+    <div id="task-popup" class="hidden">
+        <div id="task-content">
+            <h2 id="task-date"></h2>
+            <div id="task-list"></div>
+            <input id="task-name" type="text" placeholder="Enter your name">
+            <textarea id="task-input" placeholder="Enter your task"></textarea>
+            <div id="task-buttons">
+                <button id="add-task">Add Task</button>
+                <button id="remove-task">Remove All Tasks</button>
+            </div>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+    
+    <script src="calendar.js"></script>
+
+</body>
+</html>
